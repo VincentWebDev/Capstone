@@ -1,6 +1,6 @@
 import React from 'react'
-
+import './index.css'
 export default function Nav(){
 
-    return <p>Nav</p>
+    return <p className="navbar">Nav</p>
     }
