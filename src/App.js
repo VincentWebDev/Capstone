@@ -1,22 +1,19 @@
 
 import './App.css'
 import React from 'react'
+import Home from './Home'
 import Header from './Header'
-import Nav from './Nav'
 import Main from './Main'
 import Footer from './Footer'
 import './index.css'
-
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
-  return (
-    <div className = "main--container">
-      <div className = "grid--item grid--item--1"><Header /></div>
-      <div className = "grid--item grid--item--2"><Nav /></div>
-      <div className = "grid--item grid--item--3"><Main /></div>
-      <div className = "grid--item grid--item--4"><Footer /></div>
-    </div>
-  )
+  return (<>
+  <Routes>
+    <Route path="/" element={<Home />}></Route>
+  </Routes>
+  </>)
 }
 
 export default App;
